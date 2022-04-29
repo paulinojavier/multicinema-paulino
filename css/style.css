@@ -1,96 +1,105 @@
-*{
+* {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
 
-body{
-   background-color: rgb(88, 85, 85);
+body {
+   background-color: #363535;
 }
 
-.menu{
+.menu {
    background-color: transparent;
    color: #fff;
 }
 
 
 
-.navbar-nav a{
+.navbar-nav a {
    font-size: 18px;
    text-transform: uppercase;
    font-weight: 500;
 }
 
-.menu .navbar-brand{
+.menu .navbar-brand {
    color: #fff;
    font-size: 25px;
    text-transform: uppercase;
    font-weight: bold;
    letter-spacing: 2px;
 }
+
 .navbar-light.navbar-brand:focus,
-.navbar-light .navbar-brand:hover{
-   color: #fff;
-}
-.navbar-light .navbar-nav .nav-link{
-   color: #fff;
-}
-.navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:hover{
+.navbar-light .navbar-brand:hover {
    color: #fff;
 }
 
-.prueba{
+.navbar-light .navbar-nav .nav-link {
+   color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+   color: #fff;
+}
+
+.prueba {
    background-color: red;
 }
 
-.w-100{
-   height: 90vh; 
+.w-100 {
+   height: 90vh;
 }
 
-.navbar-toggler{
+.navbar-toggler {
    padding: 1px 5px;
    font-size: 18px;
    line-height: 0.3;
    background: #FFF;
 }
 
-.card{
+.card {
    margin: 9px;
+   border: none;
+   border-radius: 10px;
 }
-.card-body{
+
+.card-body {
    background-color: rgb(59, 57, 57);
    color: #fff;
    height: 80px;
 }
-.tag{
+
+.tag {
    position: absolute;
    top: 10px;
    left: 10px;
    font-size: 13px;
 }
-.star{
-   color:red
+
+.star {
+   color: red
 }
 
-.flayer{
+.flayer {
    background-image: url("../assets/palomitas.jpg");
    width: 100%;
    height: 400px;
    background-repeat: no-repeat;
-    background-size: cover;
+   background-size: cover;
 }
 
-.flayer:before{
+.flayer:before {
    content: '';
    position: absolute;
    top: 0;
    right: 0;
    left: 0;
    bottom: 0;
-   background: rgba(0,0,0,0.7);
+   background: rgba(0, 0, 0, 0.7);
 }
-.titulo-contenido{
+
+.titulo-contenido {
    text-align: center;
    color: rgb(240, 240, 240);
    opacity: none;
@@ -98,14 +107,15 @@ body{
    padding: 200px;
    color: #e4d804;
    position: relative;
-   
+
 }
 
-.pagination{
+.pagination {
    padding-top: 20px;
    margin-left: 5px;
 }
-.page-link{
+
+.page-link {
    background-color: rgb(59, 57, 57);
    color: #fff;
 }
@@ -116,16 +126,110 @@ body{
    color: #000;
 }
 
-.page-item.active, .page-link:hover {
+.page-item.active,
+.page-link:hover {
    background-color: #e4d804;
    border-color: #e4d804;
    color: #000;
 }
 
+.card-plan {
+   width: 100%;
+   height: 600px;
+}
+
+.card-focus:hover {
+   border: solid 3px #e4d804;
+}
+
+.buy-botton {
+   border-radius: 50px;
+   margin: 50px;
+   color: #fff;
+   background-color: #363535;
+   border: solid 3px #e4d804;
+}
+
+.buy-botton:hover {
+   font-weight: bold;
+   background-color: #e4d804;
+   color: #000;
+}
+
+.card-title,
+.price-contenido {
+   text-align: center;
+}
+
+.price {
+   width: 40%;
+   height: 70px;
+   background-color: #e4d804;
+   color: #000;
+   margin-left: 100px;
+   border-radius: 5px;
+}
+
+.price-contenido {
+   padding: 10px;
+   font-size: 30px;
+   font-weight: bold;
+}
+
+.spacing {
+   padding-left: 50px;
+   color: #e4d804;
+}
+
+.spacing-m {
+   padding-left: 70px;
+}
+
+.plan {
+   margin-top: 80px;
+   text-align: center;
+   color: #fff;
+}
+
+.list-group-plan {
+   padding: 5px;
+}
+
+.list-plan {
+   list-style: none;
+   border-top: 1px solid rgb(209, 209, 209);
+   padding: 15px;
+}
+
+.list-plan-null {
+   border-top: none;
+}
+
+.trial-contenido {
+   background-color: #e4d804;
+   width: 100%;
+   height: 100px;
+   margin-top: 80px;
+}
+
+.blog-content {
+   margin: 50px 0 50px 0;
+}
+
+.blog-card {
+   margin-top: 20px;
+}
 
 
+.fondo {
+   background-color: #363535;
+}
 
-.footer{
+.card-body {
+   height: 100px;
+}
+
+.footer {
    background-color: #000;
    width: 100%;
    height: 100px;
@@ -134,14 +238,14 @@ body{
    padding-top: 50px;
 }
 
-@media only screen and (max-width:800px){
- .navbar-nav{
-    text-align: center;
-    background: rgba(0,0,0,0.5);
- }  
- .w-100{
-   height: 50vh; 
-}
-}
 
+@media only screen and (max-width:800px) {
+   .navbar-nav {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+   }
 
+   .w-100 {
+      height: 50vh;
+   }
+}
